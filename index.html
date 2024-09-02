@@ -9,7 +9,7 @@
   <script>
     // Request to the Swiggy CORS proxy
     fetch(
-      "http://localhost:3001/api/proxy/swiggy/mapi/homepage/getCards?lat=18.969539&lng=72.819329"
+      "http://localhost:3001/api/proxy/swiggy/mapi/restaurants/list/v5?offset=0&is-seo-homepage-enabled=true&lat=18.969539&lng=72.819329&carousel=true&third_party_vendor=1"
     )
       .then((response) => response.json())
       .then((data) => console.log(data))
