@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
-<script>
+  </head>
+  <body></body>
+  <script>
     // Request to the Swiggy CORS proxy
-fetch('http://localhost:3001/api/proxy/swiggy/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=17.385044&lng=78.486671&restaurantId=237054&catalog_qa=undefined&submitAction=ENTER')
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error('Error:', error));
-
-</script>
+    fetch(
+      "http://localhost:3001/api/proxy/swiggy/mapi/homepage/getCards?lat=18.969539&lng=72.819329"
+    )
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error("Error:", error));
+  </script>
 </html>
